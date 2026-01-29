@@ -1,0 +1,30 @@
+# Composer
+/vendor/
+
+# ENV (секреты)
+.env
+.env.*
+!.env.example
+
+# PHPUnit caches
+/.phpunit.result.cache
+/.phpunit.cache/
+/vendor/bin/.phpunit.result.cache
+
+# Excel integration generated files (tests create them dynamically)
+/tests/fixtures/*.xlsx
+!/tests/fixtures/.gitkeep
+
+# Logs / runtime (оставим папки, но игнорим содержимое)
+/logs/*
+!/logs/.gitkeep
+/storage/tmp/*
+!/storage/tmp/.gitkeep
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE
+/.idea/
+.vscode/
